@@ -1,0 +1,37 @@
+<html lang="pt-br">
+<head>
+	<title>Novo ticket Zendesk</title>
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">	
+</head>
+<body id="body-index">
+	<div class="container">
+		<h1>Abrir novo chamado</h1>
+		<form id="form-ticket">
+			<fieldset>
+				<label>Nome</label>
+				<input type="text" />
+			</fieldset>
+			<fieldset>
+				<label>Email</label>
+				<input type="email" />
+			</fieldset>
+			<fieldset>
+				<label>Assunto</label>
+				<input type="text" />
+			</fieldset>
+			<fieldset>
+				<label>Mensagem</label>
+				<textarea></textarea>
+			</fieldset>
+			<a href="" class="bt" id="bt-new-ticket">Enviar</a>
+		</form>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
+<!--
+curl https://{subdomain}.zendesk.com/api/v2/tickets.json \
+-d '{"ticket": {"requester": {"name": "The Customer", "email": "thecustomer@domain.com"}, "subject": "My printer is on fire!", "comment": { "body": "The smoke is very colorful." }}}' \
+-H "Content-Type: application/json" -v -u {email_address}:{password} -X POST
+-->

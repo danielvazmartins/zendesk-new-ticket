@@ -1,0 +1,31 @@
+#body-index .container {
+	text-align: center;
+}
+
+#body-index .container form {
+	text-align: left;
+}
+
+#body-index .container form fieldset {
+	border: none;
+}
+
+#body-index .container form fieldset label {
+	display: block;
+}
+
+#body-index .container form fieldset input,
+#body-index .container form fieldset textarea {
+	width: 100%;
+}
+
+#body-index .container form .bt {
+	width: 100%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: green;
+    color: white;
+    padding: 10px 0;
+}
